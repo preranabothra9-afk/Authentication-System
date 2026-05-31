@@ -17,3 +17,10 @@ app.use(
 app.use("/api/auth", authRoutes);
 
 export default app;
+
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Authentication System API is Live"
+  });
+});
